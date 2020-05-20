@@ -12,7 +12,7 @@
 
 ### groupテーブル
 |Column|Type|Options|
-|———|----|-------|
+|------|----|-------|
 |group_name|string|null: false, unique: true|
 |groups_users_id|integer|null: false, foreign_key: true|
 

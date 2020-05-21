@@ -13,12 +13,12 @@
 ### groupテーブル
 |Column|Type|Options|
 |------|----|-------|
-|group_name|string|null: false, unique: true|
-|groups_users_id|integer|null: false, foreign_key: true|
+|name|string|null: false, unique: true|
 
 #### Association
 - has_many :groups_users
 - has_many :messages
+- has_many :users
 
 ### userテーブル
 |Column|Type|Options|
@@ -31,6 +31,7 @@
 #### Association
 - has_many :groups_users
 - has_many :messages
+- has_many :groups
 
 ### messageテーブル
 |Column|Type|Options|

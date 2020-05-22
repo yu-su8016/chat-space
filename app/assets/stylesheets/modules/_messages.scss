@@ -1,0 +1,117 @@
+.wrapper{
+  display: flex;
+}
+
+.sidebar{
+  width: 300px;
+  height: 100vh;
+  background-color: #253141;
+  float: left;
+  &__usename{
+    height: 100px;
+    width: 300px;
+    position: relative;
+    &__top-items{
+      color: #ffffff;
+      height: 20px;
+      width: 260px;
+      position: absolute;
+      top: 40px;
+      left: 20px;
+      display: flex;
+      &__name{
+        width: calc(100% - 60px);
+        height: 20px;
+        line-height: 20px;
+      }
+      &__icons{
+        width: 60px;
+        height: 20px;
+        text-align: right;
+        line-height: 20px;
+      }
+    }
+  }
+  &__chatlist{
+    background-color: #2f3e51;
+    height: calc(100% - 100px);
+    width: 300px;
+    box-sizing: border-box;
+    padding: 20px;
+    color: #ffffff;
+    font-weight: bold;
+    &__group{
+      font-size: 15px;
+      margin-bottom: 5px;
+    }
+    &__message{
+      font-size: 11px;
+      margin-bottom: 40px;
+    }
+  }
+}
+
+.icon{
+  color: #ffffff;
+  text-decoration: none;
+  text-align: right;
+  margin-left: 5px;
+}
+
+.chat-main{
+  height: 100vh;
+  width: calc(100vw - 300px);
+  background-color: #ffffff;
+  float: right;
+  &__group{
+    height: 100px;
+    width: calc(100vw - 300px);
+    background-color: #eeeeee;
+    padding: 0 40px;
+    display: flex;
+    
+    &--name{
+      color: #333333;
+      font-size: 20px;
+      width: calc(100% - 72px);
+      padding-top: 35px;
+      box-sizing: border-box;
+      &--member{
+        color: #999999;
+        font-size: 12px;
+        margin-top: 15px;
+      }
+    }
+    &--edit{
+      
+      font-size: 16px;
+      width: 72px;
+      height: 40px;
+      padding: 0 20px;
+      margin-top: 28px;
+      line-height: 40px;
+      border: 1px solid #38aef0;
+      
+    }
+  }
+  &__message-list{
+    width: calc(100vw - 300px);
+    height: calc(100vh - 100px - 90px);
+    background-color: #fafafa;
+  }
+  &__message-form{
+    width: calc(100vw - 300px);
+    height: 90px;
+    background-color: #d2d2d2;
+  }
+}
+
+.btn-edit{
+  color: #38aef0;
+  text-decoration: none;
+}
+
+
+* {
+  box-sizing: border-box;
+}

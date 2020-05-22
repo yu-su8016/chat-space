@@ -1,0 +1,17 @@
+.sidebar
+  .sidebar__usename
+    .sidebar__usename__top-items
+      %p.sidebar__usename__top-items__name
+        masa
+      %ul.sidebar__usename__top-items__icons
+        = link_to "#", class: "icon" do
+          = icon('far', 'edit')
+          %span<>
+        = link_to "#", class: "icon" do
+          = icon('fas', 'cog')
+          %span<>
+  .sidebar__chatlist
+    %p.sidebar__chatlist__group
+      techcamp
+    %p.sidebar__chatlist__message
+      まだメッセージがありません

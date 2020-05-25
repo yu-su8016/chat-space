@@ -42,15 +42,28 @@ $aqua: #38aef0;
     padding: 20px;
     color: $siro;
     font-weight: bold;
-    &__group{
+    &__group {
+      text-decoration: none;
+      color: $siro;
+      &__name{
       font-size: 15px;
       margin-bottom: 5px;
+      text-decoration: none;
+      color: $siro;
+      }
+      &__message{
+        font-size: 11px;
+        margin-bottom: 40px;
+        text-decoration: none;
+        color: $siro;
+      }
     }
-    &__message{
-      font-size: 11px;
-      margin-bottom: 40px;
-    }
+    
   }
+}
+
+.group{
+  text-decoration: none;
 }
 
 .icon{

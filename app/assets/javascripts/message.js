@@ -54,10 +54,13 @@ $('#new_message').on('submit', function(e){
       .done(function(data){
         var html = buildHTML(data);
         $('.chat-main__message').append(html);
-        $('.btn-submit').prop('disabled', false);
+        $('.new_message')[0].reset();
       })
       .fail(function() {
         alert("メッセージ送信に失敗しました");
-    });
+      })
+      .always(function() {
+        $('.btn-submit').prop('disabled', false);
+      });
 })
 });

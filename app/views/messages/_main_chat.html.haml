@@ -14,7 +14,7 @@
   .chat-main__message
     = render @messages
 
-  .form
+  .chat-main__form
     = form_for [@group, @message] do |f|
       = f.text_field :content, class: 'form__textarea', placeholder: 'type a message'
       .form__inputbox
